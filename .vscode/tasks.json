@@ -2,6 +2,13 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Build web",
+      "type": "shell",
+      "isBackground": true,
+      // https://stackoverflow.com/a/74783428/5840652
+      "command": "flutter build web --base-href=\"/flutter_color_filter_issue/\" --web-renderer=html"
+    },
+    {
       "label": "Run Frontend chrome",
       "type": "shell",
       "isBackground": true,
