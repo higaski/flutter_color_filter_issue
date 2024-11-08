@@ -1,0 +1,12 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Frontend chrome",
+      "type": "shell",
+      "isBackground": true,
+      // https://stackoverflow.com/a/74783428/5840652
+      "command": "flutter run -d chrome --web-browser-flag \"--disable-web-security\""
+    }
+  ]
+}
